@@ -10,8 +10,18 @@ def join_ingredients(src)
     ["pepperoni", "green olives", "onions"],
     ["sausage", "green peppers", "pineapple" ]
   ]
-  
+   result = []
+
+  i = 0
+  while i < src.length do
+    inner = src[i]
+    result << "I love #{inner[0]} and #{inner[1]} on my pizza"
+    i += 1
+  end
+
+  result
 end
+
 
 def find_greater_pair(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
